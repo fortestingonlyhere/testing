@@ -1,0 +1,24 @@
+body {
+	text-align: center;
+	font-family: 'Libre Baskerville', serif;
+	background: #2C3E50;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #FD746C, #2C3E50);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #FD746C, #2C3E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+.board button {
+	width: 100px;
+	height: 100px;
+	border-radius: 100px;
+	margin: 2px;
+	border: 3px solid black;
+	background: rgb(181, 188, 182);
+}
+
+.jumbotron {
+	background: #b3efc1;
+	border: 2px solid #a4dba5;
+	border-top: none;
+}

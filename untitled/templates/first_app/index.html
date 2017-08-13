@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>First App</title>
+    <link rel="shortcut icon" href="{% static "images/favicon.ico" %}" type="image/x-icon" />
+    <link rel="stylesheet" href="{% static "css/mystyle.css" %}" />
+
+</head>
+<body>
+
+    <h1>JUST A LOGO <img src="{% static "images/Accelrys.jpg" %}" alt="Not loading" width="3%" height="3%"></h1>
+    <h1>Hello there from template/first_app/index.html</h1>
+    <h2>Here are your access records:</h2>
+    <div class="djangotwo">
+        {% if access_records %}
+        <table>
+            <thead>
+                <th>Site name:</th>
+                <th>Date accessed:</th>
+            </thead>
+            <tbody>
+                {% for acc in access_records %}
+                <tr>
+                    <td>{{ acc.name }}</td>
+                    <td>{{ acc.date }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% else %}
+        <p>No access reords found!</p>
+        {% endif %}
+
+    </div>
+
+</body>
+</html>

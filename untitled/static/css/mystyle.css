@@ -1,0 +1,17 @@
+* {
+    padding: 3px;
+    margin: 3px;
+}
+
+img {
+    border: 2px solid #33d211;
+    margin-bottom: -8px;
+}
+
+h1 {
+    padding-bottom: 3px;
+}
+
+tr td {
+    border: solid 2px black;
+}

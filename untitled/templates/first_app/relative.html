@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>relative</title>
+</head>
+<body>
+    <h1>WElcome to relative</h1>
+    <a href="{% url 'first_app:other' %}">The other page</a> {# make sure there is no gap in quotes #}
+    <a href="{% url 'admin:index' %}">Admin page</a>
+    <a href="{% url 'index' %}">Link to index</a>
+
+</body>
+</html>

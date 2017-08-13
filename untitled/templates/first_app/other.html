@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+
+{% extends "first_app/base.html" %}
+{% block title_block %}other{% endblock %}
+    {% block body_block %}
+        <h1>Welcome to other</h1>
+
+        <h3>{{ text|upper }} - {{ number|add:"99" }}</h3>  <!-- upper is a filter that uppercase all letters and add, adds number + whatever is the argument ie 99 here-->
+        <h4>{{ text|cut:"hell" }}</h4>
+    {% endblock %}
